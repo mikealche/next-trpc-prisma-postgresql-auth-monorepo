@@ -1,4 +1,5 @@
 import Cookies from "js-cookie";
+import { useRouter } from "next/dist/client/router";
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { useQueryClient } from "react-query";
 import { inferQueryOutput, trpc } from "../api/APIProvider";
@@ -23,6 +24,7 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
   } = trpc.useQuery(["auth/me/"], {
     enabled: !!sessionToken,
   });
+  const router = useRouter();
 
   console.log({ status });
   //On init check cookies and set token
@@ -36,14 +38,13 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
   const logout = async () => {
     Cookies.remove("sessionToken");
     setSessionToken("");
-    console.log("je");
     queryClient.resetQueries(["auth/me/"]);
   };
 
   const authenticate = (token: string) => {
     Cookies.set("sessionToken", token);
     setSessionToken(token);
-    window.location.href = "/";
+    router.push("/");
   };
 
   return (

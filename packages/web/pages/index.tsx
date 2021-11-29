@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     <MainLayout>
       <Card>
         <>
-          <div className="text-8xl font-extrabold w-2/4 mb-20">
+          <div className="text-8xl font-extrabold text-center mb-10">
             The starter{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-purple-400 via-pink-500 to-red-600">
               {" "}
@@ -20,15 +20,19 @@ const Home: NextPage = () => {
             </span>{" "}
             you were waiting for
           </div>
-
-          <button className="py-5 px-40 border border-red-300 transition-all rounded-lg tracking-wider mr-10 ">
-            GitHub
-          </button>
-          <Link href="/signup" passHref>
-            <button className="py-5 px-40 border bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 transition-all rounded-lg text-white tracking-wider ">
-              Sign up
+          <p className="mb-20 tracking-widest text-gray-400 text-2xl text-center">
+            Next.JS + Tailwind CSS + TRPC.io + Prisma ORM + PostgreSQL
+          </p>
+          <div className="flex justify-center">
+            <button className="py-5 px-40 border border-red-300 transition-all rounded-lg tracking-wider mr-10 ">
+              GitHub
             </button>
-          </Link>
+            <Link href="/signup" passHref>
+              <button className="py-5 px-40 border bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 transition-all rounded-lg text-white tracking-wider ">
+                Sign up
+              </button>
+            </Link>
+          </div>
         </>
       </Card>
     </MainLayout>
