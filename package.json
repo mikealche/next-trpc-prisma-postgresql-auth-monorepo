@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "server": "yarn --cwd packages/backend dev",
+    "web": "yarn --cwd packages/web dev"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
