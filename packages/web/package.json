@@ -5,7 +5,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "yarn playwright test",
+    "test:watch": "nodemon -e ts,js,tsx,jsx -x yarn test"
   },
   "dependencies": {
     "@trpc/client": "^9.15.0",
@@ -20,6 +22,7 @@
     "postcss": "^8.4.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-hot-toast": "^2.1.1",
     "react-query": "^3.33.5",
     "tailwindcss": "^2.2.19"
   },
@@ -29,6 +32,7 @@
     "@types/react": "17.0.37",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
+    "nodemon": "^2.0.15",
     "typescript": "4.5.2"
   }
 }

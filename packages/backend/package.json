@@ -1,13 +1,14 @@
 {
-  "name": "backend",
+  "name": "@root/backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.ts",
+  "types": "dist/server.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "node dist/server",
-    "dev": "nodemon src/server.ts",
+    "start": "node dist/start",
+    "dev": "dotenv -e .env.development nodemon src/start.ts",
     "migrate:dev": "yarn prisma migrate dev"
   },
   "keywords": [],
@@ -17,6 +18,7 @@
     "@types/bcrypt": "^5.0.0",
     "@types/jsonwebtoken": "^8.5.6",
     "@types/node": "^16.11.10",
+    "dotenv": "^10.0.0",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.2"
   },

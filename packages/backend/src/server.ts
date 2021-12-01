@@ -30,4 +30,4 @@ const server = http.createServer((req, res) => {
   handler(req, res);
 });
 
-server.listen(2022);
+export default server;

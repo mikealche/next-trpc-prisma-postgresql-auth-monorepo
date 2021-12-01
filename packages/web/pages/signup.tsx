@@ -5,11 +5,16 @@ import Image from "next/image";
 import { trpc } from "../api/APIProvider";
 import Button from "../components/Button";
 import { useAuth } from "../contexts/auth";
+import { useErrorNotificationToast } from "../hooks/useErrorNotificationToast";
 import MainLayout, { Card } from "../layouts/MainLayout";
 
 const Signup: NextPage = () => {
   const signupMutation = trpc.useMutation("auth/signup");
   const { authenticate } = useAuth();
+
+  console.log(signupMutation.error?.message);
+  useErrorNotificationToast(signupMutation.error?.message);
+
   return (
     <MainLayout>
       <Card className="max-w-max px-20 mx-auto">

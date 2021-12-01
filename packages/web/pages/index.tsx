@@ -14,8 +14,10 @@ const Home: NextPage = () => {
         <>
           <div className="text-8xl font-extrabold text-center mb-10">
             The starter{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-purple-400 via-pink-500 to-red-600">
-              {" "}
+            <span
+              className="text-transparent bg-clip-text bg-gradient-to-br from-purple-400 via-pink-500 to-red-600"
+              id="main"
+            >
               template
             </span>{" "}
             you were waiting for

@@ -1,6 +1,7 @@
 import { inferAsyncReturnType } from "@trpc/server";
 import * as trpc from "@trpc/server";
-import { NodeHTTPCreateContextFnOptions } from "@trpc/server/dist/declarations/src/adapters/node-http";
+import type { NodeHTTPCreateContextFnOptions } from "@trpc/server/dist/declarations/src/adapters/node-http";
+
 import crypto from "crypto";
 import { IncomingMessage, ServerResponse } from "http";
 

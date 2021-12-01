@@ -47,5 +47,5 @@ export const Navbar = () => {
 
 const UserInfo = () => {
   const { user } = useAuth();
-  return <p>{user!.email}</p>;
+  return <p id="user-email">{user!.email}</p>;
 };
