@@ -18,7 +18,7 @@ const Signup: NextPage = () => {
   return (
     <MainLayout>
       <Card className="max-w-max px-20 mx-auto">
-        <>
+        <div className="sm:w-96">
           <h1 className="text-xl mb-10 font-bold text-center">Sign Up</h1>
           <Formik
             initialValues={{ email: "", password: "" }}
@@ -68,7 +68,7 @@ const Signup: NextPage = () => {
               </form>
             )}
           </Formik>
-        </>
+        </div>
       </Card>
     </MainLayout>
   );
