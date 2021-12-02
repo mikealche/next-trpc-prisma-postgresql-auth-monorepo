@@ -37,6 +37,7 @@ const AddTodoForm = () => {
             <input
               type="text"
               name="text"
+              autoComplete="off"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.text}

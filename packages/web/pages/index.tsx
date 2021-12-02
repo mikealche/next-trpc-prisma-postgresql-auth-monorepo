@@ -26,9 +26,12 @@ const Home: NextPage = () => {
             Next.JS + Tailwind CSS + TRPC.io + Prisma ORM + PostgreSQL
           </p>
           <div className="flex justify-center">
-            <button className="py-5 px-40 border border-red-300 transition-all rounded-lg tracking-wider mr-10 ">
+            <a
+              href="https://github.com/mikealche/next-node-auth-monorepo"
+              className="py-5 px-40 border border-red-300 transition-all rounded-lg tracking-wider mr-10 "
+            >
               GitHub
-            </button>
+            </a>
             <Link href="/signup" passHref>
               <button className="py-5 px-40 border bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 transition-all rounded-lg text-white tracking-wider ">
                 Sign up
