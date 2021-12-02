@@ -1,5 +1,5 @@
 # Next Node Auth Monorepo Starter
-![](demo.mov)
+![](./demo.mov)
 
 This is a starter template for a project with:
  + [Next.js](https://nextjs.org/)
@@ -24,4 +24,10 @@ What may differentiate this repo from other starter templates is that this repo 
 * Capability of having cronjobs in the separate Node.js server
 * Deploy your frontend to Vercel (plays along very well with Next.js) and your backend to Heroku/Render/AWS/etc...
 * Super simple migrations with Prisma
+
+## How to run
+0. Run `yarn` to install everything
+1. Replace the DATABASE_URL in `packages/backend/.env.development`
+2. `cd packages/backend` and run `yarn migrate:dev` to create the DB schema in your dev database
+3. cd back into the root of the project and run `yarn server` to lift the server and `yarn web` to lift the Next.js frontend
 
