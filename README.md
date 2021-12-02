@@ -1,10 +1,14 @@
 # Next Node Auth Monorepo Starter
-![](./demo.mov)
+
+https://user-images.githubusercontent.com/8585011/144510344-ce9285aa-4d0e-4ba4-8e73-dc2f9fba8012.mov
 
 This is a starter template for a project with:
  + [Next.js](https://nextjs.org/)
  + Tailwind CSS 
  + TRPC.io  
+
+
+
  + Prisma ORM 
  + PostgreSQL.
 
