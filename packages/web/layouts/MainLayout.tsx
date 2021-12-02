@@ -4,7 +4,7 @@ import { Navbar } from "../components/Navbar";
 
 const MainLayout = ({ children }: { children: JSX.Element }) => {
   return (
-    <div className="w-screen bg-gray-100 h-screen p-10">
+    <div className="w-screen bg-blue-50 h-screen p-10">
       <Navbar />
       {children}
     </div>

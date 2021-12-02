@@ -4,8 +4,12 @@ import { createHTTPServer } from "@trpc/server/adapters/standalone";
 import createContext, { Context } from "./Context";
 import AuthController from "./controllers/AuthController";
 import http from "http";
+import TodosController from "./controllers/TodosController";
 
-export const appRouter = trpc.router<Context>().merge("auth/", AuthController);
+export const appRouter = trpc
+  .router<Context>()
+  .merge("auth/", AuthController)
+  .merge("todos/", TodosController);
 
 export type AppRouter = typeof appRouter;
 

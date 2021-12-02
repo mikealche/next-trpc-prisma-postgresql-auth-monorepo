@@ -9,7 +9,7 @@
     "build": "tsc",
     "start": "node dist/start",
     "dev": "dotenv -e .env.development nodemon src/start.ts",
-    "migrate:dev": "yarn prisma migrate dev"
+    "migrate:dev": "dotenv -e .env.development yarn prisma migrate dev"
   },
   "keywords": [],
   "author": "Mike Alche",
