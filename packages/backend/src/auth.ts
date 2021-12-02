@@ -42,7 +42,7 @@ export const createSession = async (user: User) => {
     { userId: user.id, email: user.email },
     process.env.TOKEN_KEY!,
     {
-      expiresIn: "120d",
+      expiresIn: "15d",
     }
   );
   return token;
