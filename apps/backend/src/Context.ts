@@ -6,7 +6,7 @@ import crypto from "crypto";
 import { IncomingMessage, ServerResponse } from "http";
 
 import { getUserFromHeader } from "./auth";
-import { User } from ".prisma/client";
+import { User } from "@prisma/client";
 
 const ADMIN_ROLES = ["ADMIN", "SUPERADMIN"];
 
