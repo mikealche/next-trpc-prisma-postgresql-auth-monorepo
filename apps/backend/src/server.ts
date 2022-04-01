@@ -1,5 +1,4 @@
 import * as trpc from "@trpc/server";
-import { createHTTPServer } from "@trpc/server/adapters/standalone";
 
 import createContext, { Context } from "./Context";
 import AuthController from "./controllers/AuthController";

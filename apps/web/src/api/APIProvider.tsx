@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import React, { useEffect, useState } from "react";
 import { createReactQueryHooks } from "@trpc/react";
-import type { AppRouter } from "../../backend/src/server";
+import type { AppRouter } from "../../../backend/src/server";
 import Cookies from "js-cookie";
 
 import { inferProcedureInput, inferProcedureOutput } from "@trpc/server";

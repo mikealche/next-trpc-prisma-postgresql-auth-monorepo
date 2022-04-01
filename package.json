@@ -5,10 +5,14 @@
     "lerna": "^4.0.0"
   },
   "scripts": {
-    "server": "yarn --cwd packages/backend dev",
-    "web": "yarn --cwd packages/web dev"
+    "server": "yarn --cwd apps/backend dev",
+    "web": "yarn --cwd apps/web dev"
   },
   "dependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
 }
